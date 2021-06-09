@@ -20,7 +20,7 @@ until [ $i -gt 9 ]; do
 "DepotBuildConfig"
 {
   "DepotID" "$currentDepot"
-  "ContentRoot" "$rootPath/$currentDepotPath"
+  "ContentRoot" "$currentDepotPath"
   "FileMapping"
   {
     "LocalPath" "*"
