@@ -19,7 +19,7 @@ i=1;
 until [ $i -gt 9 ]; do
   eval "currentDepotPath=\$depot${i}Path"
   if [ -n "$currentDepotPath" ]; then
-    echo "$rootPath/$currentDepotPath"
+    echo "$contentRoot/$currentDepotPath"
   fi;
 
   i=$((i+1))
