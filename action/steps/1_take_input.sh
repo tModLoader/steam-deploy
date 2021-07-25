@@ -2,7 +2,7 @@
 
 export appId=$INPUT_APPID
 export buildDescription=$INPUT_BUILDDESCRIPTION
-export rootPath=$INPUT_ROOTPATH
+export contentRoot=$INPUT_CONTENTROOT
 export releaseBranch=$INPUT_RELEASEBRANCH
 export localContentServer=$INPUT_LOCALCONTENTSERVER
 export previewEnabled=$INPUT_PREVIEWENABLED
@@ -13,12 +13,12 @@ until [ $i -gt 9 ]; do
   eval "currentDepotPath=depot${i}Path"
   if [ -n "$currentInput" ]; then
     export "$currentDepotPath"="$currentInput"
-    echo "$rootPath/$currentDepotPath"
+    echo "$contentRoot/$currentDepotPath"
   fi;
 
   i=$((i+1))
 done
 
 echo "$appId"
-echo "$rootPath"
+echo "$contentRoot"
 echo "$releaseBranch"
