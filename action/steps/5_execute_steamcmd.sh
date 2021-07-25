@@ -35,11 +35,13 @@ echo ""
     echo "#             Errors            #"
     echo "#################################"
     echo ""
-    echo "Listing current folder and rootpath"
+    echo "Listing current folder and contentRoot"
     echo ""
     ls -alh
     echo ""
-    ls -alh $rootPath
+    ls -alh $contentRoot
+    echo ""
+    echo "contentRoot is $contentRoot"
     echo ""
     echo "Listing logs folder:"
     echo ""
