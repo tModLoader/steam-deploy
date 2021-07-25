@@ -18,3 +18,7 @@ until [ $i -gt 9 ]; do
 
   i=$((i+1))
 done
+
+echo "$appId"
+echo "$rootPath"
+echo "$releaseBranch"
