@@ -13,7 +13,7 @@ cat << EOF > "manifest.vdf"
 {
   "appid" "$appId"
   "desc" "$buildDescription"
-  "buildoutput" ""
+  "buildoutput" "BuildOutput"
   "contentroot" "$rootPath"
   "setlive" "$releaseBranch"
   "preview" "$previewEnabled"
