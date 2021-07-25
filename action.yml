@@ -9,6 +9,9 @@ inputs:
   buildDescription:
     required: false
     description: 'Description for this build.'
+  rootPath:
+    required: true
+    description: 'The root path to your builds. This is the base of which depots will search your files.'
   username:
     required: true
     default: ''
